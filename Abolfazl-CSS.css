@@ -1,11 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
 }
+
 header {
     height: 100vh;
     background-image: url(img/City\ \(1\).jpg);
@@ -13,10 +15,12 @@ header {
     background-size: cover;
 
 }
+
 .header__navbar {
     background-color: #afafaf18;
     position: relative;
 }
+
 header ul {
     width: 45%;
     padding: 0;
@@ -31,6 +35,7 @@ header ul {
     color: #dadada;
     text-transform: uppercase;
 }
+
 header h1 {
     user-select: none;
     position: absolute;
@@ -45,6 +50,7 @@ header h1 {
     margin: 0;
     font-family: 'Courgette', cursive;
 }
+
 header p {
     user-select: none;
     position: absolute;
@@ -61,18 +67,22 @@ header p {
     margin: 0;
     font-family: 'Russo One', sans-serif;
 }
+
 .main__about {
     background-color: #202020;
     text-align: center;
 }
+
 .main__about:first-child {
     padding: 45px;
 }
+
 .image-Abowlfazl {
     user-select: none;
     width: 25%;
     border-radius: 100px;
 }
+
 .main__about-text h2 {
     user-select: none;
     color: #dadada;
@@ -80,12 +90,14 @@ header p {
     text-transform: uppercase;
     font-family: 'Russo One', sans-serif;
 }
+
 main p {
     user-select: none;
     color: #dadada;
     font-size: 2rem;
     line-height: 1.5;
 }
+
 .main__contactMe {
     height: 100vh;
     background-image: url(img/keyboard.png);
@@ -94,11 +106,14 @@ main p {
     display: flex;
     align-items: center;
 }
+
+
 .main__contactMe-text {
     /* width: 100%; */
     margin: 0 40% 0 10%;
     padding: 2rem 1rem 0 1rem;
 }
+
 .main__contactMe-text h2 {
     user-select: none;
     color: #202020;
@@ -106,106 +121,172 @@ main p {
     text-transform: uppercase;
     font-family: 'Russo One', sans-serif;
 }
+
 .main__contactMe-text p {
     color: #999999;
     font-size: 2rem;
     line-height: 1.5;
 }
+
 .main__contactMe-table {
     font-size: 1.5rem;
     line-height: 1.5;
     color: #202020;
 }
+
 .main__contactMe-text-copyright {
     user-select: none;
     font-size: 1.45rem !important;
 }
+
 .boldText-span {
     font-weight: 900 !important;
 }
+
 a {
     text-decoration: none;
     color: currentColor;
 }
+
 .underline-hover {
     transition: .4s;
 }
+
 .underline-hover:hover {
     text-decoration: underline;
 }
+
 .redHeart{
     transition: 1s;
 }
-/****************************************** Media Query ********************************************/
-@media (max-width: 1310px) and (min-width: 992.1px) {
-    header h1 {font-size: 4rem;}
+
+
+/******************************************** Media Query ********************************************/
+
+@media (max-width: 1310px) and (min-width: 1000.1px) {
+    header h1 {
+        font-size: 4rem;
+    }
 }
+
+@media (max-width: 1000px) and (min-width: 922.1px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .main__contactMe {
+        background-image: url(img/keyboard2.jpg);
+    }
+
+    .main__contactMe-text p{
+        color: #333333;
+    }
+}
+
 @media (max-width: 992px) and (min-width: 801px) {
     header h1 {
         font-size: 3.5rem;
     }
+
+    .main__contactMe {
+        background-image: url(img/keyboard2.jpg);
+    }
+
+    .main__contactMe-text p{
+        color: #333333;
+    }
 }
+
 @media (max-width: 800px) and (min-width: 700.0001px) {
+
     header ul {
         width: 80%;
         font-size: 1.25rem;
     }
+
     header h1 {
         font-size: 3rem;
     }
+    
     header p {
         font-size: 2rem;
     }
+
     .image-Abowlfazl {
         width: 45%;
     }
-    .main__contactMe-text {width: 100%;}}
+
+    .main__contactMe {
+        background-image: url(img/keyboard2.jpg);
+    }
+
+    .main__contactMe-text {
+        width: 100%;
+    }
+}
 
 @media (max-width: 700px) and (min-width: 480.0001px) {
     header ul {
         width: 100%;
     }
+
     header h1 {
         font-size: 2.2rem;
     }
+
     header p {
         font-size: 2rem;
     }
+
     .main__contactMe-text {
         margin: 0 20% 0 5%;
         padding: 1rem 0.5rem 0 0.5rem;
     }
+
     .main__contactMe {
         background-image: url(img/keyboard2.jpg);
     }
+
     .main__contactMe-text p{
         color: #333333;
     }
+
     .image-Abowlfazl {
         width: 65%;
     }
 }
+
 @media (max-width: 480px) {
     header ul {
         font-size: 1.2rem;
         width: 100%;
     }
+
     header h1 {
         font-size: 1.3rem;
     }
+
     header p {
         font-size: 1.1rem;
     }
+
     .main__contactMe-text {
         margin: 0 4% 0 3%;
         padding: 0rem 0.5rem 0 0.5rem;
     }
+
+    .main__contactMe-text p {
+        font-size: 1.5rem;
+    }
+
     .main__contactMe {
         background-image: url(img/keyboard2.jpg);
     }
+
     .main__contactMe-text p{
         color: #333333;
     }
+
     .image-Abowlfazl {
         width: 65%;
     }
